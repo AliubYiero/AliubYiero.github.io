@@ -1,0 +1,8 @@
+.vp-doc > div > p {
+	text-indent: 2em;
+}
+
+#VPContent {
+	background-image: linear-gradient( 135deg, #5EFCE85E 10%, #736EFE5E 100%);
+	
+}
