@@ -16,7 +16,6 @@ export default defineConfig( {
 	// 	'docs/:pkg/(.*)': ':pkg/index.md'
 	// },
 	
-	base: '/blog/',
 	srcDir: 'docs',
 	outDir: '.vitepress/dist',
 	
@@ -28,7 +27,7 @@ export default defineConfig( {
 		sidebar: sidebarConfig,
 		
 		socialLinks: [
-			{ icon: 'github', link: 'https://github.com/AliubYiero' },
+			{ icon: 'github', link: 'https://github.com/AliubYiero/AliubYiero.github.io' },
 			// { icon: 'bilibili', link: 'https://space.bilibili.com/12548410' },
 		],
 	},
