@@ -18,6 +18,7 @@ export default defineConfig( {
 	
 	base: '/blog/',
 	srcDir: 'docs',
+	outDir: '.vitepress/dist',
 	
 	themeConfig: {
 		logo: '/logo.png',
