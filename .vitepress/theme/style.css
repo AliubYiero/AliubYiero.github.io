@@ -1,12 +1,29 @@
+/*
+正文缩进
+*/
 .vp-doc > div > p {
 	text-indent: 2em;
 }
 
+/*
+首页渐变背景色
+*/
 #app:has(.is-home) {
 	background-image: linear-gradient( 135deg, #5EFCE85E 10%, #736EFE5E 100%);
 }
 
+/*
+隐藏底部版权信息栏的背景, 只保留文字
+*/
 .VPFooter.VPFooter {
 	border: none;
 	background-color: transparent;
+}
+
+/* .vitepress/theme/style/var.css */
+.medium-zoom-overlay {
+	z-index: 30;
+}
+.medium-zoom-image {
+	z-index: 9999 !important; /* 给的值是21，但是实测盖不住，直接999 */
 }

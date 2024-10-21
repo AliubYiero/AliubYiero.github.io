@@ -5,3 +5,4 @@
 > 使用插件:
 > 
 > - [vitepress-helper](https://huyikai.github.io/vitepress-helper/): 自动生成路由导航栏. 
+> - [medium-zoom](https://github.com/francoischalifour/medium-zoom): 点击缩放图片. 
