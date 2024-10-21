@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@huyikai/vitepress-helper": "^0.0.30",
     "@types/node": "^22.7.7",
     "vitepress": "^1.4.1"
   }

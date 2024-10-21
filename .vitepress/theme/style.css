@@ -2,7 +2,11 @@
 	text-indent: 2em;
 }
 
-#VPContent {
+#app:has(.is-home) {
 	background-image: linear-gradient( 135deg, #5EFCE85E 10%, #736EFE5E 100%);
-	
+}
+
+.VPFooter.VPFooter {
+	border: none;
+	background-color: transparent;
 }
