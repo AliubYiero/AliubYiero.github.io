@@ -77,8 +77,8 @@ $i( 'https://cdn.bootcdn.net/ajax/libs/lodash.js/4.17.21/lodash.min.js' )
 
 ### 图片示例
 
-![console importer动态示例](./iamges_01.%20Console%20Importer%20-%20通过控制台引入js库/console%20importer动态示例.gif)
+![console importer动态示例](./iamges_01_Console%20Importer%20-%20通过控制台引入js库/01.gif)
 
 ## 示例 - 以lodash为例
 
-![image-20230916222709367](./iamges_01.%20Console%20Importer%20-%20通过控制台引入js库/image-20230916222709367.png)
+![image-20230916222709367](./iamges_01_Console%20Importer%20-%20通过控制台引入js库/02.png)
