@@ -1,12 +1,26 @@
 import { defineConfig, defineConfigWithTheme } from 'vitepress';
 import vitepressHelper, { config } from '@huyikai/vitepress-helper';
+import { withMermaid } from 'vitepress-plugin-mermaid';
+
+/*
+* vitepress-mermaid 配置
+* */
+const vitepressMermaidConfig = withMermaid( {
+	mermaid: {
+		// refer https://mermaid.js.org/config/setup/modules/mermaidAPI.html#mermaidapi-configuration-defaults for options
+	},
+	// optionally set additional config for plugin itself with MermaidPluginConfig
+	mermaidPlugin: {
+		class: 'mermaid', // set additional css classes for parent container
+	},
+} );
 
 /*
 * vitepress-helper 配置
 * */
 const vitepressHelperConfig = {
 	directory: 'docs',
-	collapsible: true
+	collapsible: true,
 };
 
 /*
@@ -14,7 +28,7 @@ const vitepressHelperConfig = {
 *
 * @tutorial https://vitepress.dev/reference/site-config
 * */
-const vitepressConfig =  defineConfig( {
+const vitepressConfig = defineConfig( {
 	title: '叁仟月\'s 个人博客',
 	description: '随便写写',
 	
@@ -23,7 +37,7 @@ const vitepressConfig =  defineConfig( {
 	* */
 	head: [
 		// 网站图片
-		['link', { rel: 'icon', href: '/logo.png' }]
+		[ 'link', { rel: 'icon', href: '/logo.png' } ],
 	],
 	
 	// cleanUrls: true,
@@ -62,7 +76,7 @@ const vitepressConfig =  defineConfig( {
 		footer: {
 			message: 'Built with VitePress, Vitepress-helper (MIT License)',
 			copyright: '© 2024 叁仟月. All rights reserved.',
-		}
+		},
 	},
 } );
 
@@ -70,13 +84,14 @@ const vitepressConfig =  defineConfig( {
  * 导出配置
  */
 export default async () => {
-	const vitepressHelperInstance = await vitepressHelper({
+	const vitepressHelperInstance = await vitepressHelper( {
 		...vitepressHelperConfig,
-		...vitepressConfig
-	});
-	return defineConfigWithTheme({
+		...vitepressConfig,
+	} );
+	return defineConfigWithTheme( {
 		extends: config,
 		...vitepressHelperInstance,
 		footer: void 0,
-	});
+		...vitepressMermaidConfig,
+	} );
 };
