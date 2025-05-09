@@ -412,6 +412,11 @@
   resolved "https://registry.npmmirror.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.0.tgz#3188bcb273a414b0d215fd22a58540b989b9409a"
   integrity sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==
 
+"@ltd/j-toml@^1.38.0":
+  version "1.38.0"
+  resolved "https://registry.npmmirror.com/@ltd/j-toml/-/j-toml-1.38.0.tgz#00d19f6d65ac5dac39bc64f97a545f47e9ebefc4"
+  integrity sha512-lYtBcmvHustHQtg4X7TXUu1Xa/tbLC3p2wLvgQI+fWVySguVZJF60Snxijw5EiohumxZbR10kWYFFebh1zotiw==
+
 "@mermaid-js/mermaid-mindmap@^9.3.0":
   version "9.3.0"
   resolved "https://registry.npmmirror.com/@mermaid-js/mermaid-mindmap/-/mermaid-mindmap-9.3.0.tgz#cfe10329198a0f37e27eef1dcc4a1cf21f187e2b"

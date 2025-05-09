@@ -18,5 +18,8 @@
     "mermaid": "^11.3.0",
     "vitepress": "^1.4.1",
     "vitepress-plugin-mermaid": "^2.0.17"
+  },
+  "dependencies": {
+    "@ltd/j-toml": "^1.38.0"
   }
 }
