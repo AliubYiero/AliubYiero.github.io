@@ -1,4 +1,4 @@
-# 快速搭建使用 element-plsu 组件库的 vue3 应用
+# 快速搭建使用 element-plus 组件库的 vue3 应用
 
 > 本文仅为并非框架学习, 仅仅作为框架搭建快速入门. 
 
@@ -124,4 +124,3 @@ createApp( App )
     .use( ElementPlus )		// (#add) 新增一行 .use(), 直接链式调用即可
     .mount( '#app' )
 ```
-

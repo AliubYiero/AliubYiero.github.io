@@ -2,5 +2,7 @@
 .vitepress/dist
 
 .idea
+**/.idea
 node_modules
 /docs/.ignore
+/docs/.discard
