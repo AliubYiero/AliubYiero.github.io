@@ -31,7 +31,7 @@ const vitepressHelperConfig = {
 const vitepressConfig = defineConfig( {
 	title: '叁仟月\'s 个人博客',
 	description: '随便写写',
-	
+	ignoreDeadLinks: true,
 	/*
 	* 顶部信息栏
 	* */
@@ -47,6 +47,17 @@ const vitepressConfig = defineConfig( {
 	
 	srcDir: 'docs',
 	outDir: '.vitepress/dist',
+	
+	markdown: {
+		// 强制文件名规范化
+		anchorAlias: ( fileName ) => fileName.replace( /\s+/g, '-' ).toLowerCase(),
+	},
+	vite: {
+		resolve: {
+			// 处理 Windows 路径问题
+			preserveSymlinks: true,
+		},
+	},
 	
 	/*
 	* 主题配置
@@ -66,7 +77,10 @@ const vitepressConfig = defineConfig( {
 		* 社交账号信息
 		* */
 		socialLinks: [
-			{ icon: 'github', link: 'https://github.com/AliubYiero/AliubYiero.github.io' },
+			{
+				icon: 'github',
+				link: 'https://github.com/AliubYiero/AliubYiero.github.io',
+			},
 			// { icon: 'bilibili', link: 'https://space.bilibili.com/12548410' },
 		],
 		

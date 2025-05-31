@@ -6,3 +6,7 @@
 node_modules
 /docs/.ignore
 /docs/.discard
+
+# writing
+/docs/Aegisub/ASS 特效标签
+/docs/ffmpeg基础入门
